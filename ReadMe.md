@@ -47,3 +47,23 @@ By using a multi-level hierarchy, we avoid code duplication:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/jy4education-gif/Hera-s-Vigil-The-Metamorphosis-of-Zeus](https://github.com/jy4education-gif/Hera-s-Vigil-The-Metamorphosis-of-Zeus)
+
+---
+
+## Project Structure
+
+```text
+heras-vigil/
+├── index.html              # Entry point and main layout
+├── README.md               # Project documentation and OOP didactic guide
+├── .gitignore              # Git exclusion file (e.g., node_modules, .DS_Store)
+├── css/
+│   └── style.css           # Game styling and UI transitions
+└── js/
+    ├── main.js             # Game loop and module orchestration
+    ├── input.js            # Keyboard state management (Input Handler)
+    └── modules/            # Core OOP Architecture
+        ├── GameObject.js   # Abstract base class (Encapsulation)
+        ├── Avatars.js      # Zeus' disguises (Inheritance/DRY)
+        ├── Gods.js         # Zeus & Hera classes (Horizontal movement)
+        └── Projectile.js   # Code-based projectile logic
