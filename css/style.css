@@ -1,0 +1,71 @@
+/* Grund-Setup */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a12;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Verhindert Scrollbars während des Spiels */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Das UI als Header-Leiste */
+#ui {
+    position: relative;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    backdrop-filter: blur(5px); /* Moderner Glas-Effekt */
+    border-bottom: 2px solid #ffd700;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats { 
+    font-size: 1.4rem; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+    color: #ffd700; 
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); 
+    letter-spacing: 1px;
+}
+
+/* Eingabefeld Optimierung */
+input {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #1a1a2e;
+    border: 1px solid #ffd700;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px; /* Abgerundet für modernen Look */
+    transition: all 0.3s ease;
+    width: 250px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 15px #ffd700;
+    background: #242444;
+}
+
+/* Der Canvas füllt den Rest */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Hinter dem UI */
+    background: radial-gradient(circle at top, #111133 0%, #000011 100%);
+}
+
+.msg { 
+    color: #ff4444; 
+    font-weight: bold; 
+    margin-top: 8px; 
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
