@@ -3,10 +3,10 @@ export default class GameObject {
     #y;
 
     constructor(x, y, speed) {
-        if (this.constructor === GameObject) {
+        if (this.constructor === GameObject) {  // Instanziierung verhindern, da JS keine abstrakte KLassen via abstract möglich
             throw new Error("Abstract Class 'GameObject' cannot be instantiated.");
         }
-        this.#x = x;
+        this.#x = x; // # private Acces Modifier in JS
         this.#y = y;
         this.speed = speed;
         this.active = true;
