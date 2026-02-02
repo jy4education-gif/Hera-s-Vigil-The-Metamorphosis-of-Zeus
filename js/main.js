@@ -1,5 +1,5 @@
 /**
- * main.js - Der Dirigent der Götterschlacht
+ * main.js - Dirigent der Götterschlacht
  * Orchestriert die Spiel-Logik, Eingaben und Kollisionen.
  */
 
@@ -29,7 +29,7 @@ const projectiles = [];
 const codes = ["OLYMP", "STIER", "GOLD", "REGEN", "ADLER", "BLITZ"];
 
 let playerX = canvas.width / 2;
-const playerSpeed = 5;
+const playerSpeed = 8;
 let score = 0;
 let lives = 3;
 
